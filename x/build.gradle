@@ -1,5 +1,8 @@
 apply plugin: rootProject.ext.plugins.library
 
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.lixiong'
+
 android {
 
     compileSdkVersion rootProject.ext.android.compileSdkVersion
@@ -15,5 +18,5 @@ android {
 }
 
 dependencies {
-    api rootProject.ext.dependencies.xRecyclerView
+    compileOnly rootProject.ext.dependencies.xRecyclerView
 }
